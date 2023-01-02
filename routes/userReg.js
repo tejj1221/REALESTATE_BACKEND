@@ -2,7 +2,7 @@
 const express=require("express")
 const bcrypt = require('bcrypt');
 const router=express.Router()
-const user=require("../models/usersModal")
+const user=require("../models/usermodel")
 const jwt = require('jsonwebtoken');
 const { route } = require("./propertyroute");
 const secret="sugar"

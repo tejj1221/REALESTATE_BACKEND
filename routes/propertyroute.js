@@ -1,8 +1,8 @@
 const { request } = require("express");
 const express=require("express")
-const blogs=require("../models/formSchema")
+const blogs=require("../models/formmodel")
 const jwt=require("jsonwebtoken");
-const user=require("../models/usersModel")
+const user=require("../models/usermodel")
 const route=express.Router();
 const secret="sugar"
 module.exports=route
