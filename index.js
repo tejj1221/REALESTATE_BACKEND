@@ -19,3 +19,6 @@ mongoose.connect('mongodb+srv://sivateja:tejj1221@cluster0.xaxtzs7.mongodb.net/?
 app.use(bodyparser.json())
 app.use("/property",property) 
 app.use("/users",user)
+app.get("/",(req,res)=>{
+    res.send("shgdiskan")
+})
