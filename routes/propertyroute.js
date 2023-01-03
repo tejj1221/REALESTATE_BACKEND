@@ -19,7 +19,7 @@ route.post("/add",async(req,res)=>{
             }else{
                    try{ const data=await user.findOne({_id:decoded.data})
                     if(data){
-                        await blogs.create({...req.body,ppdid:_id})
+                        await blogs.create({...req.body,ppdid:i++})
                         return res.status(200).json({
                             message:"success"
                         })
